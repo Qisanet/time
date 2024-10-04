@@ -1,0 +1,41 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bulb On/Off Example</title>
+ </head>
+ <style>
+    #TFbutton{
+        margin-left: 80px;
+    }
+ </style>
+ <body>
+     <h1>Bulb - Turn On/Off</h1>
+     
+     <div id="image-container">
+         <img id="bulb-image" src="offf.gif" alt="Bulb Image" style="width:200px;">
+     </div>
+     
+     <button onclick="turnOn()">Turn On</button>
+     <button id="TFbutton"onclick="turnOff()">Turn Off</button>
+ 
+     <script>
+         function turnOn() {
+             var img = document.getElementById("bulb-image");
+             img.src = "onnn.gif";
+         }
+ 
+         function turnOff() {
+             var img = document.getElementById("bulb-image");
+             img.src = "offf.gif";
+         }
+ 
+        
+     </script>
+     var str="welcome to java script"
+     console.log(str.slice(0,7))
+ </body> 
+ </html>
+ 
